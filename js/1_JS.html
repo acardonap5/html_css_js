@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio</title>
+    
+</head>
+<body>
+    <script>
+    document.write("<h1>Hola Mundo<h1>"); // 1
+    var saludo ="Hola Mundo Variable.. "  //2 
+    document.write("<h1>" + saludo+ "<h1>"); //2 
+        /* --------- 3 ----------- */
+        var num = 10; 
+        var mensaje = ""; 
+        if (num>=0){
+            
+            if (num===0){
+                mensaje = "Neutro";
+            }else{
+                mensaje = "Positivo";
+            }
+        }else{
+            mensaje = "Negativo";
+        }
+
+        document.write("<h1>" + mensaje+ "<h1>");
+        /* --------- 3 ----------- */
+        /* --------- 4 ----------- */
+        var edad=19;
+        var adulto = (edad>=18) ? "Mayor de Edad" : "Menor de Edad";
+        document.write("<h1>" + adulto+ "<h1>");
+        /* --------- 5 ----------- */
+        alert("Hola esto es una alerta"); // 
+
+       /* --------- 6 ----------- */
+        var dia = 2;
+        switch (dia) {
+            case 1: 
+                document.write("Lunes");
+                    break;
+            case 2:
+                document.write("Martes");
+                    break;
+            case 3:
+                document.write("Miercoles");
+                    break;
+            case 4:
+                document.write("Jueves");
+                    break;
+            default:
+                document.write("El resto");
+        }
+        document.write(i+"<br/>");
+        /* For */
+        for (i=1;i<=5;i++){
+                document.write(i+"<br/>");
+                }
+        /* While */
+        document.write("<br/>");
+        var i=1;
+            while (i<=5) {
+                document.write(i + "<br />");
+                i++;
+                }
+        /*dO WHILE*/
+        document.write("<br/>");
+        var i=1;
+        do {  
+            document.write(i + "<br />");
+            i++;  
+            }while (i<=5); 
+
+/* fUNCION */
+function f_mensaje(n,a) {
+     return "Hola! soy "+ n + " " + a;
+}
+function f_suma(a,b){
+    var sum = a + b;
+    return sum;
+}
+        var nombre = prompt("Ingrese Nombre:");
+        var apellido = prompt("Ingrese Apellido:");
+
+     alert(f_mensaje(nombre,apellido)) ;
+
+        var num1s = prompt("Ingrese Num1:");
+        var num2s = prompt("Ingrese Num2:");
+        
+        alert(f_suma(parseFloat(num1s),parseFloat(num2s)));
+
+
+var result = confirm("Desea Elimar?");
+if (result == true) {
+  alert("Eliminado");
+}
+else {
+  alert("No Eliminado");
+}
+    </script>
+    
+</body>
+</html>
+

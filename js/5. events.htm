@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Objetos</title>
+</head>
+<body>
+    <form>
+        <input type="submit" value="Ok" onclick="mensaje()" id="btn1" >
+        <input type="submit" value="Ok 2"  id="btn2" >
+        <input type="text"  id="texto"onchange="change()" >
+        <button id="demo">Start</button>
+    </form>
+    <script>
+        function mensaje(){
+            alert("Hola Mundo");
+        }
+
+    var x = document.getElementById("btn2");
+    x.onclick = function () {
+  document.body.innerHTML = Date();
+}
+function change() {
+    var x = document.getElementById('texto');
+    x.value = x.value.toUpperCase();
+}
+var btn = document.getElementById("demo");
+btn.addEventListener("click", myFunction);
+function myFunction() {
+  alert(Math.random());
+ // btn.removeEventListener("click", myFunction);
+}
+    </script>
+</body>
+</html>

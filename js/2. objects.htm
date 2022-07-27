@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        var person = {
+ name: "Armando", age: 31, 
+ favColor: "Celeste", height: 183
+};
+// dos formas de acceder a la propiedades
+var x = person.name;
+var y = person['name'];
+
+document.write(x+"<br/>");
+document.write(y+"<br/>");
+document.write(y.length);
+
+function persona(name, age, color) {
+  this.name = name;
+  this.age = age;
+  this.favColor = color;
+}
+var p1 = new persona("Jose",22,"verde");
+document.write("<br/>"+p1.name);
+document.write("<br/>"+p1.age);
+
+
+function persona_update(name, age) {
+  this.name = name;  
+  this.age = age;
+  this.changeName = function (name) {
+    this.name = name;
+  }
+}
+
+var p = new persona_update("Augusto", 21);
+document.write("<br/>"+p.name);
+p.changeName("Armando");
+document.write("<br/>"+p.name);
+
+    </script>
+</body>
+</html>

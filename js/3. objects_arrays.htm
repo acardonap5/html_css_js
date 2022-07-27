@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+var cursos = new Array("Htmls","Css","JavaScript");
+document.write(cursos);
+document.write("<br/>"+cursos[1]);
+cursos[1] = "CSS";
+document.write("<br/>"+cursos[1]);
+// SUper util
+var courses = new Array();
+courses[0] = "HTML";
+courses[1] = "CSS";
+courses[2] = "JS";
+courses[3] = "C++";
+document.write("<br/>"+courses[1]);
+
+var person = []; //empty array
+person["name"] = "John";
+person["age"] = 46;
+document.write("<br/>"+person["age"]);
+
+var d = new Date();
+document.write("<br/>"+d.getFullYear());
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours+":"+mins+":"+secs;
+   
+}
+//setInterval(printTime, 1000);
+
+</script>
+</body>
+</html>
