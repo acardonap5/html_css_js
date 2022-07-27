@@ -6,3 +6,6 @@ https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-ico
 https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
 https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client
 https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode
+https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
